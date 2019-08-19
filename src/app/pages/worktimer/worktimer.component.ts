@@ -61,16 +61,6 @@ export class WorktimerComponent implements OnInit {
 		this.menuIsShown = true;
 	}
 
-	darkModeCheckboxChange() {
-		if(this.darkModeCheckboxIsSelected) {
-			document.body.classList.remove("themedLightOverride");
-			document.body.classList.add("themedDarkOverride");
-		} else {
-			document.body.classList.add("themedLightOverride");
-			document.body.classList.remove("themedDarkOverride");
-		}
-	}
-
 	msToTime(s) {
 	  var ms = s % 1000;
 	  s = (s - ms) / 1000;
