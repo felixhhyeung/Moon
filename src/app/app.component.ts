@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule, Router, NavigationEnd } from '@angular/router';
 
 @Component({
 	selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 	title = 'Moon';
 	darkModeCheckboxIsSelected: boolean = false;
-
+	
 	ngOnInit() {
 		// dark mode
 		if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
