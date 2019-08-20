@@ -1,10 +1,7 @@
 .page-top-left-corner-light, .page-top-left-corner-dark {
-	// position: absolute;
-	// top: 0;
-	// left: 0;
 	height: 50px;
 	width: 50px;
-	// background-color: grey;
+	cursor: pointer;
 }
 
 .page-top-left-corner-light:before, .page-top-left-corner-dark:before {
