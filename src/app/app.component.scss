@@ -1,0 +1,44 @@
+.page-top-left-corner-light, .page-top-left-corner-dark {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	height: 50px;
+	width: 50px;
+	// background-color: grey;
+}
+
+.page-top-left-corner-light:before, .page-top-left-corner-dark:before {
+	content: "";
+	position: absolute;
+	border-width: 0 0 0 0;
+	border-radius: 0 0 10px 0;
+	border-style: solid;
+	animation-name: page-top-left-corner-backward;
+	animation-duration: 1000ms;
+	animation-fill-mode: backwards;
+}
+
+.page-top-left-corner-light:before {
+	border-color: grey black;
+}
+
+.page-top-left-corner-dark:before {
+	border-color: grey white;
+}
+
+.page-top-left-corner-dark:hover::before, .page-top-left-corner-light:hover::before {
+	animation-name: page-top-left-corner-forward;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes page-top-left-corner-forward {
+	from { border-width: 0 0 0 0; }
+	to { border-width: 0 0 50px 50px; }
+}
+
+@keyframes page-top-left-corner-backward {
+	0% { border-width: 0 0 50px 50px; }
+	50% { border-width: 0 0 50px 50px; }
+	100% { border-width: 0 0 0 0; }
+}
