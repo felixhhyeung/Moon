@@ -1,5 +1,6 @@
-<div class="custom-control custom-switch">
-  	<input type="checkbox" class="custom-control-input" id="darkModeCheckbox" [(ngModel)]="darkModeCheckboxIsSelected" (change)="darkModeCheckboxChange()">
+<!-- <div class="custom-control custom-switch">
+  	<input type="checkbox" class="custom-control-input" id="darkModeCheckbox" [(ngModel)]="darkModeIsSelected ?" (change)="darkModeCheckboxChange()">
   	<label class="custom-control-label" for="darkModeCheckbox">Dark Mode</label>
-</div>
+</div> -->
+<div (click)="darkModeFlipClick()" [ngClass]="darkModeIsSelected ? 'page-top-left-corner-dark':'page-top-left-corner-light'"></div>
 <router-outlet></router-outlet>
