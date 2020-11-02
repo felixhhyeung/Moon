@@ -10,8 +10,8 @@ import * as isReachable from 'is-reachable';
 })
 export class HomeComponent implements OnInit {
 	version: string = version;
-	isOnline: boolean;
-	isConnectedToServer: boolean;
+	isOnline: boolean = true;
+	isConnectedToServer: boolean = true;
 	constructor() { }
 
 	ngOnInit() {
