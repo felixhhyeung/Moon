@@ -4,9 +4,24 @@
 		<div class="col-12">
 			<h1 class="text-center">Felix HH Yeung Webpage</h1>
 			<p>v{{ version }}</p>
-			<p>
-				Connectivity:
-				
+			<p class="align-items-center">
+				Connectivity: 
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/greenDot.json"
+					style="display: inline-block; width: {{isOnline ? '20' : '0'}}px; height: 20px;"
+				>
+				</lottie-player>
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/redDot.json"
+					style="display: inline-block; width: {{isOnline ? '0' : '20'}}px; height: 20px;"
+				>
+				</lottie-player>
 			</p>
 		</div>
 	</div>

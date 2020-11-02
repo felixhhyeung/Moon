@@ -98,3 +98,9 @@ body, p {
 		color: black;
 	}
 }
+
+.align-items-center {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
