@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { version } from '../../../../package.json';
 
 @Component({
   selector: 'app-worktimer',
@@ -17,7 +16,6 @@ export class WorktimerComponent implements OnInit {
 	timeSpanString: string;
 	wSTTimestamp: number;
 	menuIsShown = true;
-	public version: string = version;
 
 	constructor(
 		private cookieService: CookieService

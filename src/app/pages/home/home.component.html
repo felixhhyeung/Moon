@@ -1,8 +1,46 @@
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> -->
 <div class="container">
 	<div class="row">
 		<div class="col-12">
 			<h1 class="text-center">Felix HH Yeung Webpage</h1>
+			<p>v{{ version }}</p>
+			<p class="align-items-center">
+				Connectivity: Internet
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/greenDot.json"
+					style="display: inline-block; width: {{isOnline ? '20' : '0'}}px; height: 20px;"
+				>
+				</lottie-player>
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/redDot.json"
+					style="display: inline-block; width: {{isOnline ? '0' : '20'}}px; height: 20px;"
+				>
+				</lottie-player>
+				<->
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/greenDot.json"
+					style="display: inline-block; width: {{isConnectedToServer ? '20' : '0'}}px; height: 20px;"
+				>
+				</lottie-player>
+				<lottie-player
+					autoplay
+					loop
+					mode="normal"
+					src="../../assets/lottieFiles/redDot.json"
+					style="display: inline-block; width: {{isConnectedToServer ? '0' : '20'}}px; height: 20px;"
+				>
+				</lottie-player>
+				Moon
+			</p>
 		</div>
 	</div>
 	<div class="row">

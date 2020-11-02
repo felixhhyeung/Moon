@@ -19,6 +19,64 @@
 	}
 }
 
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia/Georgia.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia/Georgia Italic.ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia/Georgia Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Georgia";
+	src: url("assets/fonts/Georgia/Georgia Bold Italic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "PlayfairDisplay";
+	src: url("assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PlayfairDisplay";
+	src: url("assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "PlayfairDisplay";
+	src: url("assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PlayfairDisplay";
+	src: url("assets/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display", "Palatino", serif;
+}
+
+body, p {
+	font-family: "Georgia", "Palatino", serif;
+}
+
 .themed {
 	input[type="text"], input[type="number"] {
 		background: transparent;
@@ -39,4 +97,10 @@
 		background-color: white;
 		color: black;
 	}
+}
+
+.align-items-center {
+	display: flex;
+	align-content: center;
+	align-items: center;
 }
