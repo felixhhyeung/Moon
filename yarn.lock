@@ -2040,6 +2040,11 @@ arrify@^1.0.0:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
+arrify@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
+  integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
+
 asap@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
@@ -5090,7 +5095,7 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-got@^11.8.0:
+got@^11.7.0, got@^11.8.0:
   version "11.8.0"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.0.tgz#be0920c3586b07fd94add3b5b27cb28f49e6545f"
   integrity sha512-k9noyoIIY9EejuhaBNLyZ31D5328LeqnyPNXJQb2XlJZcKakLqN5m6O/ikhq/0lw56kUYS54fVm+D1x57YC9oQ==
@@ -5994,6 +5999,11 @@ is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   dependencies:
     isobject "^3.0.1"
 
+is-port-reachable@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/is-port-reachable/-/is-port-reachable-3.0.0.tgz#edf721e7d354e6e00cbeb0fc174ad89bdf6056b3"
+  integrity sha512-056IzLiWHdgVd6Eq1F9HtJl+cIkvi5X2MJ/A1fjQtByHkzQE1wGardnPhqrarOGDF88BOW+297X7PDvZ2vcyVg==
+
 is-posix-bracket@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/is-posix-bracket/-/is-posix-bracket-0.1.1.tgz#3334dc79774368e92f016e6fbc0a88f5cd6e6bc4"
@@ -6003,6 +6013,20 @@ is-primitive@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-primitive/-/is-primitive-2.0.0.tgz#207bab91638499c07b2adf240a41a87210034575"
   integrity sha1-IHurkWOEmcB7Kt8kCkGochADRXU=
+
+is-reachable@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/is-reachable/-/is-reachable-5.0.0.tgz#caa3a4d1c6368fdafb85cdb7d1e219e5b8fded6b"
+  integrity sha512-frRPbdrQWEqbnF1il9Dyrf52Q40exkHdo4/grWMjHrBn4G1DKC9sbuQihgANkJPNi2eosU4AXBsrITdXmc3IQg==
+  dependencies:
+    arrify "^2.0.1"
+    got "^11.7.0"
+    is-port-reachable "^3.0.0"
+    p-any "^3.0.0"
+    p-timeout "^3.2.0"
+    prepend-http "^3.0.1"
+    router-ips "^1.0.0"
+    url-parse "^1.4.7"
 
 is-regex@^1.0.4, is-regex@^1.1.0:
   version "1.1.0"
@@ -8429,6 +8453,11 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
+prepend-http@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-3.0.1.tgz#3e724d58fd5867465b300bb9615009fa2f8ee3b6"
+  integrity sha512-BLxfZh+m6UiAiCPZFJ4+vYoL7NrRs5XgCTRrjseATAggXhdZKKxn+JUNmuVYWY23bDHgaEHodxw8mnmtVEDtHw==
+
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
@@ -9278,6 +9307,11 @@ rollup@2.26.5:
   optionalDependencies:
     fsevents "~2.1.2"
 
+router-ips@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/router-ips/-/router-ips-1.0.0.tgz#44e00858ebebc0133d58e40b2cd8a1fbb04203f5"
+  integrity sha1-ROAIWOvrwBM9WOQLLNih+7BCA/U=
+
 run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
@@ -9302,17 +9336,10 @@ rxjs@6.6.2:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.6.0:
+rxjs@^6.6.0, rxjs@~6.6.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
-  dependencies:
-    tslib "^1.9.0"
-
-rxjs@~6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.0.tgz#af2901eedf02e3a83ffa7f886240ff9018bbec84"
-  integrity sha512-3HMA8z/Oz61DUHe+SdOiQyzIf4tOx5oQHmMir7IZEu6TMqCLHT4LRcmNaUS0NwOz8VLvmmBduMsoaUvMaIiqzg==
   dependencies:
     tslib "^1.9.0"
 
@@ -10722,7 +10749,7 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
-url-parse@^1.4.3:
+url-parse@^1.4.3, url-parse@^1.4.7:
   version "1.4.7"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
   integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==

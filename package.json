@@ -22,10 +22,11 @@
     "@lottiefiles/lottie-player": "^0.5.1",
     "bootstrap": "^4.3.1",
     "is-online": "^9.0.0",
+    "is-reachable": "^5.0.0",
     "jquery": "^3.5.0",
     "ngx-cookie-service": "^2.2.0",
     "popper": "^1.0.1",
-    "rxjs": "~6.6.0",
+    "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
