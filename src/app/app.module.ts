@@ -8,20 +8,28 @@ import { HomeComponent } from './pages/home/home.component';
 
 import {FormsModule} from "@angular/forms";
 import { CookieService } from 'ngx-cookie-service';
+import { SigninComponent } from './components/signin/signin.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
     WorktimerComponent,
     HomeComponent,
+    SigninComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
-  providers: [CookieService],
+  providers: [
+    CookieService,
+    SigninComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

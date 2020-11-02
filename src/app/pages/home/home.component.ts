@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { version } from '../../../../package.json';
 import * as isOnline from 'is-online';
 import * as isReachable from 'is-reachable';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { SigninComponent } from '../../components/signin/signin.component';
 
 @Component({
 	selector: 'app-home',
@@ -12,7 +14,9 @@ export class HomeComponent implements OnInit {
 	version: string = version;
 	isOnline: boolean = true;
 	isConnectedToServer: boolean = true;
-	constructor() { }
+	constructor(
+		private ngbModal: NgbModal,
+	) { }
 
 	ngOnInit() {
 		this.fetchOnlineStatus();
@@ -24,5 +28,17 @@ export class HomeComponent implements OnInit {
 	async fetchOnlineStatus() {
 		this.isOnline = await isOnline();
 		this.isConnectedToServer = await isReachable('/');
+	}
+
+	showSigninComponent() {
+		// const modalRef = this.modalService.open(NgbdModalContent);
+		//     modalRef.componentInstance.name = 'World';
+		this.ngbModal.open(SigninComponent, {
+			ariaLabelledBy: 'modal-basic-title'
+		}).result.then((result) => {
+	    	// this.closeResult = `Closed with: ${result}`;
+	    }, (reason) => {
+	    	// this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+	    });
 	}
 }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "moon-felixhhyeung": {
+      "hosting": {
+        "Moon": [
+          "moon-felixhhyeung"
+        ]
+      }
+    }
+  }
+}

@@ -47,3 +47,4 @@ Thumbs.db
 
 # use yarn only
 /package-lock.json
+src/environments
