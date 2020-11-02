@@ -5,7 +5,8 @@
 			<h1 class="text-center">Felix HH Yeung Webpage</h1>
 			<p>v{{ version }}</p>
 			<p class="align-items-center">
-				Connectivity: Internet
+				Connectivity: You
+				{{'<='}}
 				<lottie-player
 					autoplay
 					loop
@@ -22,7 +23,8 @@
 					style="display: inline-block; width: {{isOnline ? '0' : '20'}}px; height: 20px;"
 				>
 				</lottie-player>
-				<->
+				{{'=>'}}Internet
+				{{'<='}}
 				<lottie-player
 					autoplay
 					loop
@@ -39,7 +41,7 @@
 					style="display: inline-block; width: {{isConnectedToServer ? '0' : '20'}}px; height: 20px;"
 				>
 				</lottie-player>
-				Moon
+				{{'=>'}}Moon
 			</p>
 		</div>
 	</div>
