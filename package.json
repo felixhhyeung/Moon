@@ -7,7 +7,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "describe": "from=$(git describe | cut -d '-' -f1); echo $(tput bold)'Describing from '${from}' to HEAD.'$(tput sgr0); git log --pretty='%h - %s (%an)' ${from}..HEAD"
   },
   "private": true,
   "dependencies": {
