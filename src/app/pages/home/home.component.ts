@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 	isConnectedToServer: boolean = true;
 	constructor(
 		private ngbModal: NgbModal,
-		private authService: AuthService,
+		public authService: AuthService,
 	) { }
 
 	ngOnInit() {
