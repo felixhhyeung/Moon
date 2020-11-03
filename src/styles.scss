@@ -104,3 +104,30 @@ body, p {
 	align-content: center;
 	align-items: center;
 }
+
+ngb-modal-window {
+	background: transparent!important;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+/* Define color */
+$fbColor:#3B5998;
+
+.btn-fb, .btn-fb:hover, .btn-fb:active, .btn-fb:visited, .btn-fb:focus, .btn-fb:active:focus {
+	background-color: $fbColor!important;
+	color: white !important;
+}
+// .fb {
+// 	background-color: #3B5998;
+// 	color: white;
+// }
+
+// .twitter {
+// 	background-color: #55ACEE;
+// 	color: white;
+// }
+
+// .google {
+// 	background-color: #dd4b39;
+// 	color: white;
+// }

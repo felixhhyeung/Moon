@@ -4,6 +4,7 @@ import * as isOnline from 'is-online';
 import * as isReachable from 'is-reachable';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from '../../components/signin/signin.component';
+import { AuthService } from "../../services/auth.service";
 
 @Component({
 	selector: 'app-home',
@@ -16,6 +17,7 @@ export class HomeComponent implements OnInit {
 	isConnectedToServer: boolean = true;
 	constructor(
 		private ngbModal: NgbModal,
+		private authService: AuthService,
 	) { }
 
 	ngOnInit() {
@@ -34,11 +36,14 @@ export class HomeComponent implements OnInit {
 		// const modalRef = this.modalService.open(NgbdModalContent);
 		//     modalRef.componentInstance.name = 'World';
 		this.ngbModal.open(SigninComponent, {
-			ariaLabelledBy: 'modal-basic-title'
 		}).result.then((result) => {
 	    	// this.closeResult = `Closed with: ${result}`;
 	    }, (reason) => {
 	    	// this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
 	    });
+	}
+
+	signOut() {
+
 	}
 }

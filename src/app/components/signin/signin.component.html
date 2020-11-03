@@ -1,5 +1,13 @@
-<div class="formGroup">
-   <button type="button" (click)="authService.facebookAuth()">
-      Log in with Facebook
-   </button>
+<!-- Modal content-->
+<div class="modal-content">
+    <div class="modal-header">
+        <h4 class="modal-title">Sign in</h4>
+    </div>
+    <div class="modal-body">
+        <div class="formGroup">
+            <button type="button" class="btn btn-fb" (click)="authService.facebookAuth()">
+                Log in with Facebook
+            </button>
+        </div>
+    </div>
 </div>

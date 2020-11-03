@@ -4,6 +4,7 @@
 		<div class="col-12">
 			<h1 class="text-center">Felix HH Yeung Webpage</h1>
 			<p>v{{ version }}</p>
+			<!-- Connectivity -->
 			<p class="align-items-center">
 				Connectivity: You
 				{{'<-'}}
@@ -47,7 +48,17 @@
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<div class="card" style="width: 18rem;">
+			<!-- Welcome -->
+			<div *ngIf="authService.isSignedIn()" class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Hello {{ authService.getUserIdentifier() }}</h5>
+					<div class="text-center">
+						<button type="button" class="btn btn-primary" (click)="authService.signOut()">Sign out</button>
+					</div>
+				</div>
+			</div>
+			<!-- Sign in -->
+			<div *ngIf="!authService.isSignedIn()" class="card" style="width: 18rem;">
 				<div class="card-body">
 					<h5 class="card-title">Sign in</h5>
 					<p class="card-text">You can sign in to store preferences or use non-public features.</p>
